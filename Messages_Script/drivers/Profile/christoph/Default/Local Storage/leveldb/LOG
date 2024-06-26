@@ -1,3 +1,6 @@
-2023/06/18-12:13:13.307 200c Reusing MANIFEST D:\D partion\pyhton projects\dsfvsdjhvgdsuhjcfyds\drivers\peofile\christoph\Default\Local Storage\leveldb/MANIFEST-000001
-2023/06/18-12:13:13.310 200c Recovering log #85
-2023/06/18-12:13:13.313 200c Reusing old log D:\D partion\pyhton projects\dsfvsdjhvgdsuhjcfyds\drivers\peofile\christoph\Default\Local Storage\leveldb/000085.log 
+2024/06/27-00:38:28.770 26d0 Reusing MANIFEST D:\my\Kick_Starter_Full_projct\Messages_Script\drivers\profile\christoph\Default\Local Storage\leveldb/MANIFEST-000001
+2024/06/27-00:38:28.792 26d0 Recovering log #85
+2024/06/27-00:38:28.795 26d0 Reusing old log D:\my\Kick_Starter_Full_projct\Messages_Script\drivers\profile\christoph\Default\Local Storage\leveldb/000085.log 
+2024/06/27-00:39:42.301 b40 Level-0 table #88: started
+2024/06/27-00:39:42.309 b40 Level-0 table #88: 36263 bytes OK
+2024/06/27-00:39:42.312 b40 Delete type=0 #85
