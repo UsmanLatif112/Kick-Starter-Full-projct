@@ -3,7 +3,7 @@ from pages.functions import *
 
 def main_code_message_sending():
     # csv_file_path = 'D:\\my\\New folder\\kick starter\\kickstarter_1800.csv'
-    csv_file_path = 'C:\\Users\\Administrator\\Desktop\\New_folder\\Messages script\\kickstarter_projects.csv'
+    csv_file_path = 'D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\kickstarter_projects.csv'
     # csv_file_path = 'C:\\Users\\Administrator\\Desktop\\New_folder\\kick-starter\\kickstarter_projects.csv'
     
     with open(csv_file_path, 'r') as file:
@@ -143,5 +143,5 @@ def main_code_message_sending():
             time.sleep(30)
             if counter % 20 == 0:
                 print("Waiting for 2 hours...")
-                time.sleep(7200)  # Wait for 1 hour (3600 seconds)
+                time.sleep(2000)  # Wait for 1 hour (3600 seconds)
                 counter = 0
