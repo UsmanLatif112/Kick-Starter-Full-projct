@@ -157,9 +157,9 @@ def is_url_in_csv(url, csv_filename):
         open(csv_filename, 'a', newline='', encoding='utf-8').close()  # Create file if it does not exist
     return False
 
-csv_filee = 'C:\\Users\\Administrator\\Desktop\\New_folder\\Messages script\\Sent_messages.csv'
+csv_filee = 'D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\Sent_messages.csv'
 
-csv_filee_e = 'C:\\Users\\Administrator\\Desktop\\New_folder\\Messages script\\error_message.csv'
+csv_filee_e = 'D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\error_message.csv'
 
 # Check if URL is already in the CSV
 def is_url_in_csvv(url, csv_filename):
@@ -206,7 +206,7 @@ def save_url_to_csvv_v(url, csv_filename):
     # Usernamee = HomePage(driver)
     # Usernamee.enter_name_delay(ProfileResources.email_field, username)
 
-csv_filee_error = "C:\\Users\\Administrator\\Desktop\\New_folder\\Messages script\\error_message.csv"
+csv_filee_error = "D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\error_message.csv"
 
 def is_url_in_csvv_error(url, csv_filename):
     try:
