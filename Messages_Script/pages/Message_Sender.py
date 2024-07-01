@@ -123,10 +123,10 @@ def main_code_message_sending():
                                 kill_chrome_processes()
                                 counter += 1  # Increment the counter
                                 print(counter)
-                                time.sleep(3600)
-                                if counter % 9 == 0:
+                                time.sleep(180)
+                                if counter % 20 == 0:
                                     print("Waiting for 2 hours...")
-                                    # time.sleep(8000)  # Wait for 1 hour (3600 seconds)
+                                    time.sleep(7200)  # Wait for 1 hour (3600 seconds)
                                     counter = 0
                                     break
                             except:
