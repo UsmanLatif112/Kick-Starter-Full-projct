@@ -1,8 +1,17 @@
 from pages.Imports import *
 from drivers.driver import *
-
+import psutil
 import pyautogui,random,time,csv
 
+def kill_chrome_processes():
+    for process in psutil.process_iter(['pid', 'name']):
+        if process.info['name'] == 'chrome' or process.info['name'] == 'chrome.exe':
+            try:
+                process.terminate()  # or process.kill()
+                # print(f'Killed process {process.pid} - {process.name()}')
+            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+                pass
+            
 def random_mouse_movemen_t(duration):
     start_time = time.time()
     screen_width, screen_height = pyautogui.size()
@@ -16,12 +25,12 @@ def random_mouse_movemen_t(duration):
         pyautogui.moveTo(
             random_x,
             random_y,
-            duration=random.uniform(0.5, 2),
+            duration=random.uniform(1, 2),
             tween=pyautogui.easeInOutQuad,
         )
 
         # Wait for a random time before the next move
-        time.sleep(random.uniform(0.5, 1.5))
+        time.sleep(random.uniform(1, 2.5))
 
 
 
@@ -104,7 +113,7 @@ def gentle_human_like_scroll(driver, duration):
         ).perform()
 
         # Random sleep to simulate human-like scroll intervals
-        sleep_time = random.uniform(0.5, 1)
+        sleep_time = random.uniform(1, 2)
         time.sleep(sleep_time)
           
 class BasePage:
@@ -157,9 +166,9 @@ def is_url_in_csv(url, csv_filename):
         open(csv_filename, 'a', newline='', encoding='utf-8').close()  # Create file if it does not exist
     return False
 
-csv_filee = 'D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\Sent_messages.csv'
+csv_filee = 'C:\\Users\\Administrator\\Desktop\\project\\Kick_Starter_Full_projct\\Messages_Script\\Sent_messages.csv'
 
-csv_filee_e = 'D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\error_message.csv'
+csv_filee_e = 'C:\\Users\\Administrator\\Desktop\\project\\Kick_Starter_Full_projct\\Messages_Script\\error_message.csv'
 
 # Check if URL is already in the CSV
 def is_url_in_csvv(url, csv_filename):
@@ -206,7 +215,7 @@ def save_url_to_csvv_v(url, csv_filename):
     # Usernamee = HomePage(driver)
     # Usernamee.enter_name_delay(ProfileResources.email_field, username)
 
-csv_filee_error = "D:\\my\\Kick_Starter_Full_projct\\Messages_Script\\error_message.csv"
+csv_filee_error = "C:\\Users\\Administrator\\Desktop\\project\\Kick_Starter_Full_projct\\Messages_Script\\error_message.csv"
 
 def is_url_in_csvv_error(url, csv_filename):
     try:
